@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css?v=1" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="../jquery-3.4.1.slim.min.js"></script>
+        <title>St. Vincent Pallotti College of Engg</title>
+    </head>
+    <body>
+        <header class="vlabs-header sticky-top bg-white">
+            <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+                <button
+                    type="button"
+                    class="navbar-toggler px-4"
+                    onclick="toggle()"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand">
+                        <img
+                            class="vlabs-logo"
+                            src="../logo.jpeg"
+                            height="80"
+                            width="80"
+                        />
+                    </a>
+                </div>
+                <div
+                    id="headerNavbar"
+                    class="d-none border-top flex-grow-1 d-lg-flex align-items-center"
+                >
+                    <ul
+                        class="navbar-nav ml-auto text-center d-flex flex-md-row"
+                    >
+                        <li class="nav-item px-2 m-1">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2 m-1">
+                            <a href="../partners.html">Partners</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div
+            class="container-fluid flex-fill d-flex flex-column vlabs-page-main"
+        >
+            <div class="row py-4 px-4 breadcrumbs">
+                <a href="#" class="sidebar-a">
+                    Computer Engineering
+                </a>
+            </div>
+            <div class="row flex-grow-1 d-flex flex-nowrap">
+                <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <!-- popup menu -->
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          <a href="#" class="navbar-brand">
+                            <img src="../logo.jpeg" alt="vlabs logo" class="vlabs-logo">
+                          </a>
+                        </h5>
+                        <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu popupMenuItems" id="popupMenuItems"> 
+                        <div class="d-flex nav-menu-body">
+                            <a href="#" class="p-2 current-item">	
+                                Aim
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="Theory.html" class="p-2">	
+                            Theory	
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="Procedure.html" class="p-2">	
+                            Procedure
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="Simulation.html" class="p-2">	
+                            Simulation
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="assign.html" class="p-2">	
+                            Assignment
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="Crypt.html" class="p-2">	
+                            Cryptanalysis
+                            </a>
+                        </div>
+                        <div class="d-flex nav-menu-body">
+                            <a href="Ref.html" class="p-2">	
+                            References
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu"> 
+                <div class="d-flex nav-menu-body">
+                    <a href="#" class="p-2 current-item">	
+                        Aim
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="Theory.html" class="p-2">	
+                    Theory	
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="Procedure.html" class="p-2">	
+                    Procedure
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="Simulation.html" class="p-2">	
+                    Simulation
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="assign.html" class="p-2">	
+                    Assignment
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="Crypt.html" class="p-2">	
+                    Cryptanalysis
+                    </a>
+                </div>
+                <div class="d-flex nav-menu-body">
+                    <a href="Ref.html" class="p-2">	
+                    References
+                    </a>
+                </div>
+              
+            </div>
+        
+            <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+                <span class="lab-name"><h2 class="text-center">Cryptography</h2></span>
+                <p>The main idea here is to work on chinese remainder theorem(CRT).</p>
+                <strong>About the experiment : </strong>
+                <p>The Chinese remainder theorem is widely used for computing with large integers, as it allows replacing a computation for which one knows a bound on the size of the result by several similar computations on small integers.</p>
+                <p>The earliest known statement of the theorem is by the Chinese mathematician Sun-tzu in the Sun-tzu Suan-ching in the 3rd century CE.</p>
+            </div>
+        </div>
+    </div>
+            
+        </div>
+        
+        <script src="../toggleSidebar.js"></script>
+    </body>
+</html>
